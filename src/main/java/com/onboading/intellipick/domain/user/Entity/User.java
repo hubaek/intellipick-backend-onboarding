@@ -2,12 +2,16 @@ package com.onboading.intellipick.domain.user.Entity;
 
 import com.onboading.intellipick.domain.user.enums.UserRole;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Getter
+@Builder
 @NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "users")
 public class User {
 
@@ -28,3 +32,4 @@ public class User {
     private UserRole userRole;
 
 }
+
